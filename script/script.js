@@ -15,7 +15,7 @@ class Todo {
 
 	append(value, list) {
 		let li = document.createElement('li');
-		li.appendChild(document.createTextNode(value));
+		li.innerHTML = value;
 		list.appendChild(li);
 	}
 
