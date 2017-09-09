@@ -1,0 +1,74 @@
+body, html {
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	font-family: Ubuntu;
+	font-size: 24px;
+}
+
+.content {
+	width: 600px;
+	margin: 50px auto 0;
+}
+
+.input {
+	display: block;
+	border: 1px solid #444;
+	padding: 10px 20px;
+	border-radius: 20px;
+	outline: none;
+	margin: 0 auto;
+	transition: all 0.4s ease-in-out;
+
+}
+
+.input:focus {
+	border: 1px solid green;
+}
+
+.list {
+	width: 100%;
+	margin-top: 50px;
+	list-style: none;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+
+.list li {
+	text-align: center;
+	border-radius: 20px;
+	padding: 5px 20px;
+	border: 1px solid #444;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+}
+
+.list li:hover {
+	background-color: blue;
+	color: #fff;
+}
+
+.notification {
+	padding: 10px 20px;
+	border-radius: 15px 0 0 15px;
+	background: #008800;
+	color: #fff;
+	position: fixed;
+	right: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	border-bottom: 2px solid #fff;
+}
+
+.notification.show {
+	visibility: visible;
+	opacity: 1;
+}
