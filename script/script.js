@@ -37,7 +37,7 @@ class Todo {
 
 	function sum(a) {
 		return function(b) {
-			a - b;
+			return a + b;
 		}
 	}
 }
