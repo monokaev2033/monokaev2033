@@ -34,6 +34,12 @@ class Todo {
 			this.notifications.pop();
 		}, 1000);
 	}
+
+	function sum(a) {
+		return function(b) {
+			a - b;
+		}
+	}
 }
 
 
